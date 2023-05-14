@@ -1,9 +1,5 @@
 [{"min":2,
   "max":2,
-  "update_url":"https://cdn.discordapp.com/attachments/1104530772708302908/1107323840121557104/index.json",
-  "update":3},
- {"min":3,
-  "max":10,
   "update_url":null,
-  "update":3}
+  "update":2},
  ]
