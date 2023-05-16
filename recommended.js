@@ -55,3 +55,4 @@ onhashchange=function(){
 
 fullscreen.onclick=top.fullscreen;
 home.onclick=top.home;
+onresize();
