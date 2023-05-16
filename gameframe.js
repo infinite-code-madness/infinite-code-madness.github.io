@@ -34,7 +34,12 @@ onresize=function(){
 var size=innerWidth/10;
 for (i in image_resize_register){
 var image=image_resize_register[i];
-image.style.width=image.style.height=size+"px";
+image.style.width=image.style.height=size+"px";}
+if (current_hover_element){
+  current_hover_element.center.style.top=(current_hover_element.img.getClientRects()[0].top+current_hover_element.img.getClientRects()[0].height-current_hover_element.center.getClientRects()[0].height)+"px";
+  current_hover_element.center.style.left=current_hover_element.img.getClientRects()[0].left+"px";
+  current_hover_element.center.style.width=current_hover_element.img.style.width;
+  center.style.height=current_hover_element.font.getClientRects()[0].height+"px";
 }}
 
 hover_handler=function(event){
@@ -100,3 +105,4 @@ for (i in games){
 
 onresize();
 document.body.style.margin="0px";
+top.document.getElementById("homepage_frame").style.height=document.body.getClientRects()[0].height+"px";
