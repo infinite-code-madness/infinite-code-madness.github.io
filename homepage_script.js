@@ -9,4 +9,4 @@ for (i in urls){
 }
 document.body.style.margin="0px";
 var topsize=download_a.getClientRects()[0].height*1.2;
-iframe.style.height=topsize+"px";
+homepage_frame.style.height=topsize+"px";
