@@ -1,12 +1,13 @@
 var xhr=new XMLHttpRequest();
 xhr.open("GET","/js_api/games.json",false);
 xhr.send();
-games=JSON.parse(xhr.repsonseText);
+var games=JSON.parse(xhr.responseText);
 
-if (!localStorage.preferences){
-var prefs={"game_play_counts":{},"hashtag_play_counts":{}};
+if (localStorage.preferences){
+  var prefs=JSON.parse(localStorage.preferences)
 }else{
-var prefs=JSON.parse(localStorage.preferences)}
+  var prefs={"game_play_counts":{},"hashtag_play_counts":{}};
+}
 
 onvisibilitychange=onunload=onpagehide=function(){
 localStorage.preferences=JSON.stringify(prefs)}
@@ -30,7 +31,7 @@ return 0.5-Math.random()
 });
 
 onresize=function(){
-size=innerWidth/10)
+var size=innerWidth/10;
 for (i in image_resize_register){
 var image=image_resize_register[i];
 image.style.width=image.style.height=size+"px";
@@ -47,13 +48,13 @@ var game=game_register[id].game;
   center.style.position="absolute";
   center.style.width=img.style.width;
   center.appendChild(font);
+  document.body.appendChild(center);
   var height=font.getClientRects()[0].height;
   center.style.height=height+"px";
-  center.style.bottom=img.getClientRects()[0].bottom+"px";
+  center.style.top=(img.getClientRects()[0].top+img.getClientRects()[0].height-center.getClientRects()[0].height)+"px";
   center.style.left=img.getClientRects()[0].left+"px";
   center.style.zIndex=2;
   center.style.backgroundColor="#000000";
-  document.body.appendChild(center);
   center.setAttribute("gameid",id);
   font.setAttribute("gameid",id);
   font.onclick=center.onclick=click_handler;
@@ -84,9 +85,9 @@ var image_resize_register=[];
 create_game=function(game){
 var image_element=document.createElement("img");
 image_element.src=game["image"];
-document.appendChild(image_element);
+document.body.appendChild(image_element);
 image_resize_register.push(image_element);
-  image_element.setAttribte("gameid",game["id"]);
+  image_element.setAttribute("gameid",game["id"]);
   image_element.onmouseover=hover_handler;
   image_element.onmouseleave=unhover_handler;
   image_element.onclick=click_handler;
@@ -98,3 +99,4 @@ for (i in games){
 }
 
 onresize();
+document.body.style.margin="0px";
