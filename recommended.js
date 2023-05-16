@@ -1,5 +1,4 @@
 var size_factor=1;
-fullscreen.style.float=home.style.float="left";
 document.body.style.margin="0px";
 var id=location.hash.slice(1);
 for (i in games){
