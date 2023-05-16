@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <title>Embedder</title>
+    <script type="text/javascript">
+      onload=function(){
+      content_frame.src=unescape(location.hash.slice(1))}
+      onhashchange=function(){location.reload()};
+    </script>
+  </head>
+  <frameset rows="100%" cols="100%">
+    <frame id="content_frame">
+  </frameset>
+</html>
