@@ -26,3 +26,7 @@ fullscreen=function(){
 home=function(){
   location="/";
 }
+onfullscreenchange=function(){
+if (document.fullscreenElement){
+document.body.setAttribte("cols","100%,0%")}else{
+document.body.setAttribte("cols","90%,10%")}}
