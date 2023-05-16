@@ -14,6 +14,11 @@ play_frame.src=game["url"];
 recommended_frame.src="/recommended.html#"+id;
 }
 
+onresize=function(){
+if (game.reload_on_resize){
+  play_frame.src="about:blank";
+play_frame.src=game["url"];}}
+
 fullscreen=function(){
 }
 
