@@ -10,23 +10,19 @@ onload=onhashchange=function(){
     break;
   }
   }
-play_frame.src=game["url"];
+play_frame.src="/embed.html#"+escape(game["url"]);
 recommended_frame.src="/recommended.html#"+id;
 }
 
 onresize=function(){
 if (game.reload_on_resize){
   play_frame.src="about:blank";
-play_frame.src=game["url"];}}
+play_frame.src="/embed.html#"+game["url"];}}
 
 fullscreen=function(){
-  play_frame.requestFullscreen();
+  play_frame.contentWindow.requestFullscreen();
 }
 
 home=function(){
   location="/";
 }
-onfullscreenchange=function(){
-if (document.fullscreenElement){
-document.body.setAttribte("cols","100%,0%")}else{
-document.body.setAttribte("cols","90%,10%")}}
