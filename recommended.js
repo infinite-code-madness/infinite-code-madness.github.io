@@ -43,10 +43,11 @@ games.splice(0,1);
 load_links("play_frame");
 
 addEventListener("resize",function(){
-size=innerWidth/2;
+  size=innerWidth/2;
 fullscreen.style.width=fullscreen.style.height=home.style.width=home.style.height=size+"px"});
 
-var game_amount=Math.ceil((innerHeight-size)/innerWidth);
+size=innerWidth/2;
+var game_amount=Math.ceil((outerHeight-size)/innerWidth);
 for (var i=0;i<Math.min(game_amount,games.length);i++){
 create_game(games[i])}
 
