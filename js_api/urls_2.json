@@ -1,7 +1,7 @@
 {"homepage":{"download_a":{"href":"https://cdn.discordapp.com/attachments/1104530772708302908/1107419036943392828/installer_64.exe"},
  "homepage_frame":{"src":"/gameframe.html"}
 },
-"play_frame":{"fullscreen":{"src":"https://cdn.discordapp.com/attachments/1104530772708302908/1108088381335941251/home.png"},
-             "home":{"src":"https://cdn.discordapp.com/attachments/1104530772708302908/1108088381717618728/Fullscreen_arrows.png"}
+"play_frame":{"fullscreen":{"src":"https://cdn.discordapp.com/attachments/1104530772708302908/1108088381717618728/Fullscreen_arrows.png"},
+             "home":{"src":"https://cdn.discordapp.com/attachments/1104530772708302908/1108088381335941251/home.png"}
              }
 }
