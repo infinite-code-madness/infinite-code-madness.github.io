@@ -52,3 +52,6 @@ create_game(games[i])}
 
 onhashchange=function(){
   location.reload()};
+
+fullscreen.onclick=top.fullscreen;
+home.onclick=top.home;
