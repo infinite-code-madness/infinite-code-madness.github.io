@@ -3,7 +3,7 @@ load_links("play_frame");
 var game=null;
 
 onresize=function(){
-  var size=innerWidth/10;
+  var size=innerWidth/5;
 fullscreen.style.height=fullscreen.style.width=home.style.height=home.style.width=size+"px";
   if (game){
   if (game.reload_on_resize){content_frame.src="about:blank";
