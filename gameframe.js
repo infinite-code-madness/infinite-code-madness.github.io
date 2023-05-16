@@ -23,3 +23,4 @@ for (i in games){
 onresize();
 document.body.style.margin="0px";
 top.document.getElementById("homepage_frame").style.height=document.body.getClientRects()[0].height+"px";
+document.body.style.overflowX="hidden";
