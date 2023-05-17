@@ -14,10 +14,10 @@ play_frame.src=game["url"];
 recommended_frame.src="/recommended.html#"+id;
 }
 
-onload=function(){
+document.body.addEventListener("load",function(){
 if (localStorage["playframe_ratio"]){
 document.body.setAttribute("cols",localStorage["playframe_ratio"]);}
-}
+});
 
 onresize=function(){
 if (game.reload_on_resize){
