@@ -14,7 +14,7 @@ play_frame.src=game["url"];
 recommended_frame.src="/recommended.html#"+id;
 }
 
-document.body.addEventListener("load",function(){
+addEventListener("load",function(){
 if (localStorage["playframe_ratio"]){
 document.body.setAttribute("cols",localStorage["playframe_ratio"]);}
 });
