@@ -20,9 +20,15 @@ if (game.reload_on_resize){
 play_frame.src="/embed.html#"+game["url"];}}
 
 fullscreen=function(){
-  play_frame.contentWindow.document.body.requestFullscreen()
+  document.body.requestFullscreen();
 }
 
 home=function(){
   location="/";
 }
+
+onwebkitfullscreenchange=onmozfullscreenchange=onfullscreenchange=function(){
+if (document.fullscreenElement){
+document.body.setAttribute("cols","100%,0%");}else{
+  document.body.setAttribute("cols","90%,10%");
+}}
