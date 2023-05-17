@@ -17,7 +17,7 @@ window.__defineGetter__("scrollbarWidth",function(){
   return w;
 });
 window.__defineGetter__("isScrollbarVisible",function(){
-return document.body.getClientRects()[0].height>innerHeight});
+return document.body.getClientRects()[0].height>=innerHeight});
 onresize=function(){
   homepage_frame.style.width=(innerWidth-(isScrollbarVisible?scrollbarWidth:0))+"px";
 }
