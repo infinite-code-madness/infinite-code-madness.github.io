@@ -47,8 +47,7 @@ addEventListener("resize",function(){
 fullscreen.style.width=fullscreen.style.height=home.style.width=home.style.height=size+"px"});
 
 size=innerWidth/2;
-var game_amount=Math.ceil((outerHeight-size)/innerWidth);
-for (var i=0;i<Math.min(game_amount,games.length);i++){
+for (var i=0;i<games.length;i++){
 create_game(games[i])}
 fullscreen.style.width=fullscreen.style.height=home.style.width=home.style.height=size+"px";
 
