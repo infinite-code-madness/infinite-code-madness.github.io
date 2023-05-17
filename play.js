@@ -20,7 +20,7 @@ if (game.reload_on_resize){
 play_frame.src="/embed.html#"+game["url"];}}
 
 fullscreen=function(){
-  play_frame.contentWindow.requestFullscreen();
+  play_frame.contentWindow.document.body.requestFullscreen()
 }
 
 home=function(){
