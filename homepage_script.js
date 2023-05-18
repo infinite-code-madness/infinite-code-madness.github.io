@@ -23,9 +23,9 @@ window.__defineGetter__("isScrollbarVisible",function(){
 return document.body.getClientRects()[0].height>=innerHeight});
 onresize=function(){
   homepage_frame.style.width=(innerWidth-(isScrollbarVisible?scrollbarWidth:0))+"px";
-  search_image_size=innerWidth/20;
+  search_image_size=innerWidth/25;
   search.style.height=search.style.width=search_input.style.height=search_image_size+"px";
-  search_input.style.width=(innerWidth-search_image_size)+"px";
+  search_input.style.width=((innerWidth-search_image_size)-(isScrollbarVisible?scrollbarWidth:0))+"px";
   search_input.style.fontSize=(search_image_size-10)+"px";
 }
 search.onclick=function(){
