@@ -98,13 +98,14 @@
   "image":"https://img.gamedistribution.com/56da8a54fe204845b34ccff750d4a60b-512x512.jpeg",
   "hashtags":["fireboy and watergirl","parkour","2-player","2d","puzzle"],
   "url":"https://html5.gamedistribution.com/56da8a54fe204845b34ccff750d4a60b/"},
- {"id":"23",
-  "name":"Fruit Ninja",
-  "image":"https://img.cdn.famobi.com/portal/html5games/images/tmp/FruitNinjaTeaser.jpg",
-  "hashtags":["3d","zerstören","essen"],
-  "url":"https://play.famobi.com/fruit-ninja"},
  {"id":"24",
   "name":"Slope multiplayer",
   "image":"https://media.discordapp.net/attachments/1104530772708302908/1108709903880695818/Slope-Multiplayer.png",
   "hashtags":["unendlich","parkour","3d","slope","multiplayer"],
-  "url":"https://storage.y8.com/y8-studio/html5/akeemywka/slope_multiplayer_v6/"}]
+  "url":"https://storage.y8.com/y8-studio/html5/akeemywka/slope_multiplayer_v6/"},
+ {"id":"25",
+  "name":"Kirka",
+  "image":"https://media.discordapp.net/attachments/1104530772708302908/1108782844844703774/cover-1649101040624.png",
+  "hashtags":["shooter","3d","block-style","multiplayer","pvp"],
+  "url":"kirka.io"}
+]
