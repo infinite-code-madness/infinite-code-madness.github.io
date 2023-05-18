@@ -29,6 +29,8 @@ onresize=function(){
   search_input.style.fontSize=(search_image_size-10)+"px";
 }
 search.onclick=function(){
+  if (search_input.value.length<=0){
+  return}
 location="/search.html#"+escape(search_input.value)}
 search_input.onkeypress=function(event){
 if (event.key=="Enter"){
