@@ -29,27 +29,24 @@ onresize=function(){
   search_input.style.fontSize=(search_image_size-10)+"px";
 }
 
-var games_to_keep=[];
-var words=query.split(" ");
-for (i in games){
-for (i2 in words){
-if games[i].name.includes(words[i2]){
-games_to_keep.push(games[i]);
-break}
-}}
+var words=query.toUpperCase().split(" ");
+var games_to_keep=games.filter(function(game){return words.some(function(w){return game.name.includes(w)})});
 
 games_to_keep.sort(function(a,b){
+  var a_name_upper=a.name.toUpperCase();
+  var b_name_upper=b.name.toUpperCase();
 var a_matches=0;
 var b_matches=0;
   var a_indexscore=0;
   var b_indexscore=0;
 for (i in words){
-if (a.name.includes(words[i])){
+  var word=words[i];
+if (a_name_upper.includes(word)){
 a_matches+=1;
-a_indexscore+=a.name.indexOf(words[i])};
-  if (b.name.includes(words[i])){
+a_indexscore+=a_name_upper.indexOf(word)};
+  if (b_name_upper.includes(word)){
 b_matches+=1;
-  b_indexscore+=b.name.indexOf(words[i])};
+  b_indexscore+=b_name_upper.indexOf(word)};
 }
   if (a_matches!=b_matches){
   return b_matches-a_matches}
@@ -62,12 +59,8 @@ var a_playcount=prefs["game_play_counts"][a_id]||0;
 var b_playcount=prefs["game_play_counts"][b_id]||0;
 if (a_playcount!=b_playcount){
 return b_playcount-a_playcount};
-var a_hashplaycount=0;
-  for (i in a.hashtags){
-  a_hashplaycount+=prefs.hashtag_play_counts[a.hashtags[i]]||0}
-var b_hashplaycount=0;
-  for (i in b.hashtags){
-  b_hashplaycount+=prefs.hashtag_play_counts[b.hashtags[i]]||0}
+var a_hashplaycount=a.hashtags.reduce(function(count,current){return count+(prefs.hashtag_play_counts[hashtag]||0)},0);
+var b_hashplaycount=b.hashtags.reduce(function(count,current){return count+(prefs.hashtag_play_counts[hashtag]||0)},0);
 if (a_hashplaycount!=b_hashplaycount){
 return b_hashplaycount-a_hashplaycount};
 return 0.5-Math.random()
