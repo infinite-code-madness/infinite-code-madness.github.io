@@ -34,7 +34,7 @@ home=function(){
 
 var old_ratio=localStorage["playframe_ratio"]||"90%,10%";
 
-onwebkitfullscreenchange=onmozfullscreenchange=onfullscreenchange=function(){
+addEventListnener("fullscreen",function(){
 if (document.fullscreenElement){
   old_ratio=document.body.getAttribute("cols");
   onunload();
@@ -42,6 +42,7 @@ if (document.fullscreenElement){
 document.body.setAttribute("cols","100%,0%");}else{
   play_frame.noResize=recommended_frame.noResize=false;
   document.body.setAttribute("cols",old_ratio);
-}}
+}});
+
 onunload=onvisibilitychange=onpagehide=function(){
 localStorage["playframe_ratio"]=document.body.getAttribute("cols")}
