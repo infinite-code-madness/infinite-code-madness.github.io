@@ -52,8 +52,8 @@ var a_playcount=prefs["game_play_counts"][a_id]||0;
 var b_playcount=prefs["game_play_counts"][b_id]||0;
 if (a_playcount!=b_playcount){
 return b_playcount-a_playcount};
-var a_hashplaycount=a.hashtags.reduce(function(count,current){return count+(prefs.hashtag_play_counts[hashtag]||0)},0);
-var b_hashplaycount=b.hashtags.reduce(function(count,current){return count+(prefs.hashtag_play_counts[hashtag]||0)},0);
+var a_hashplaycount=a.hashtags.reduce(function(count,hashtag){return count+(prefs.hashtag_play_counts[hashtag]||0)},0);
+var b_hashplaycount=b.hashtags.reduce(function(count,hashtag){return count+(prefs.hashtag_play_counts[hashtag]||0)},0);
 if (a_hashplaycount!=b_hashplaycount){
 return b_hashplaycount-a_hashplaycount};
 return 0.5-Math.random()
