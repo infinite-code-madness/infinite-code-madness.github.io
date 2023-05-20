@@ -21,13 +21,6 @@ window.__defineGetter__("scrollbarWidth",function(){
 });
 window.__defineGetter__("isScrollbarVisible",function(){
 return document.body.getClientRects()[0].height>=innerHeight});
-onresize=function(){
-  homepage_frame.style.width=(innerWidth-(isScrollbarVisible?scrollbarWidth:0))+"px";
-  search_image_size=innerWidth/30;
-  search.style.height=search.style.width=search_input.style.height=search_image_size+"px";
-  search_input.style.width=((innerWidth-search_image_size)-(isScrollbarVisible?scrollbarWidth:0))+"px";
-  search_input.style.fontSize=(search_image_size-10)+"px";
-}
 
 var words=query.toUpperCase().split(" ");
 var games_to_keep=games.filter(function(game){return words.some(function(w){return game.name.includes(w)})});
@@ -77,6 +70,7 @@ addEventListener("resize",(function(){
 var size=(innerWidth-(isScrollbarVisible?scrollbarWidth:0))/30;
 search.style.width=search.style.height=home.style.width=home.style.height=search_input.style.height=size+"px";
 search_input.style.width=(innerWidth-((size*2)+(isScrollbarVisible?scrollbarWidth:0)))+"px";
+  search_input.style.fontSize=(size-10)+"px";
 if (!initialized){
   initialized=true;
 return arguments.callee}})());
@@ -96,3 +90,7 @@ home.onclick=function(){
 location="/"}
 
 load_links("search");
+
+search_input.style.border="2px solid #000000";
+search_input.style.borderRadius=0;
+search_input.style.padding="5px";
