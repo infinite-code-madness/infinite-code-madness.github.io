@@ -23,7 +23,7 @@ window.__defineGetter__("isScrollbarVisible",function(){
 return document.body.getClientRects()[0].height>=innerHeight});
 
 var words=query.toUpperCase().split(" ");
-var games_to_keep=games.filter(function(game){return words.some(function(w){return game.name.includes(w)})});
+var games_to_keep=games.filter(function(game){return words.some(function(w){return game.name.toUpperCase().includes(w.toUpperCase())})});
 
 games_to_keep.sort(function(a,b){
   var a_name_upper=a.name.toUpperCase();
