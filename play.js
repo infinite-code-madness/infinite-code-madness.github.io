@@ -34,7 +34,7 @@ home=function(){
 
 var old_ratio=localStorage["playframe_ratio"]||"90%,10%";
 
-addEventListener("fullscreen",function(){
+addEventListener("fullscreenchange",function(){
 if (document.fullscreenElement){
   old_ratio=document.body.getAttribute("cols");
   onunload();
