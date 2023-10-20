@@ -19,3 +19,12 @@ blade16.singapore-rack456.nodes.gen4.ninja 9002
 blade17.singapore-rack456.nodes.gen4.ninja 9002
 blade18.singapore-rack456.nodes.gen4.ninja 9002
 blade19.singapore-rack456.nodes.gen4.ninja 9002
+sg2.trafcfy.com 431
+sg3.trafcfy.com 431
+sg4.trafcfy.com 431
+sg5.trafcfy.com 431
+sg6.trafcfy.com 431
+sg7.trafcfy.com 431
+sg8.trafcfy.com 431
+sg9.trafcfy.com 431
+sg10.trafcfy.com 431
