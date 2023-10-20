@@ -1,24 +1,5 @@
 0
 
-blade1.singapore-rack456.nodes.gen4.ninja 9002
-blade2.singapore-rack456.nodes.gen4.ninja 9002
-blade3.singapore-rack456.nodes.gen4.ninja 9002
-blade4.singapore-rack456.nodes.gen4.ninja 9002
-blade5.singapore-rack456.nodes.gen4.ninja 9002
-blade6.singapore-rack456.nodes.gen4.ninja 9002
-blade7.singapore-rack456.nodes.gen4.ninja 9002
-blade8.singapore-rack456.nodes.gen4.ninja 9002
-blade9.singapore-rack456.nodes.gen4.ninja 9002
-blade10.singapore-rack456.nodes.gen4.ninja 9002
-blade11.singapore-rack456.nodes.gen4.ninja 9002
-blade12.singapore-rack456.nodes.gen4.ninja 9002
-blade13.singapore-rack456.nodes.gen4.ninja 9002
-blade14.singapore-rack456.nodes.gen4.ninja 9002
-blade15.singapore-rack456.nodes.gen4.ninja 9002
-blade16.singapore-rack456.nodes.gen4.ninja 9002
-blade17.singapore-rack456.nodes.gen4.ninja 9002
-blade18.singapore-rack456.nodes.gen4.ninja 9002
-blade19.singapore-rack456.nodes.gen4.ninja 9002
 sg2.trafcfy.com 431
 sg3.trafcfy.com 431
 sg4.trafcfy.com 431
