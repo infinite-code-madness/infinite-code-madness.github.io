@@ -1,16 +1,6 @@
 C07CA24BBB319CF8C85F4C63E7F5CA9325EE3DF8206E77203EBD079E88826A745CA12075D5DEBDE81C065DCAA79E39E4306A2793F1B324AEF88AF90EE7E1DAA5
 4000000000000000
 EJg4n7I2Qj5POlkmdo7pDAmWBqsrTnGTpGIux8HfDM9jJQ4x7oXbWhjPSXs4gwfoFclIgqCdiqeug4S7tx9etah4y6vARTDvBGoCDVnixOUu4DUwnn6vkrZfnEYJXebJ
-lt.1clickvpn.net 443
-us.1clickvpn.net 443
-ca.1clickvpn.net 443
-nl.1clickvpn.net 443
-gb.1clickvpn.net 443
-ee.1clickvpn.net 443
-it.1clickvpn.net 443
-de.1clickvpn.net 443
-fr.1clickvpn.net 443
-no.1clickvpn.net 443
 nl66.trafcfy.com 431
 nl95.trafcfy.com 431
 nl88.trafcfy.com 431
